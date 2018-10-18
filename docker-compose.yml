@@ -21,7 +21,7 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - db
+      - mongo
       - redis
     environment:
       DATABASE_URL: mongodb://mongo:27017
