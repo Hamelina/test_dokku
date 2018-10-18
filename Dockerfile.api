@@ -4,4 +4,6 @@ RUN npm install
 
 COPY package.json /src/package.json
 COPY ./src
+RUN docker compose up api
+RUN docker compose run
 RUN npm start
